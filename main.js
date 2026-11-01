@@ -208,3 +208,6 @@ document.querySelectorAll('[data-top]').forEach(el=>el.textContent=Math.max(...T
   const upd=()=>{const m=max(),dist=m*K,r=sec.getBoundingClientRect();un.scrollLeft=dist?Math.min(1,Math.max(0,(HD-r.top)/dist))*m:0};
   const size=()=>{sec.style.height=(innerHeight-HD+max()*K)+'px';upd()};
   addEventListener('scroll',upd,{passive:true});addEventListener('resize',size);addEventListener('load',size);size()}}
+
+/* ===== Приложение (PWA): работает без интернета и ставится на устройство ===== */
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
