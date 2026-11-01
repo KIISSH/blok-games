@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>БЛОК — игра</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><canvas id="bgfx" data-fx="page"></canvas>
+<header><div class="wrap"><a class="logo" href="index.html"><img src="logo.svg" alt="" width="34" height="34">БЛОК</a><nav class="nav"><a href="index.html">Главная</a><a href="games.html" class="on">Игры</a><a href="profile.html">Профиль</a></nav></div></header>
+<main><div class="banner sm"><div class="scene"><canvas data-fx="banner"></canvas></div><div class="wrap"><h1 id="gTitle"></h1><p id="gDesc"></p></div></div>
+<div class="page"><div class="wrap"><div class="play">
+ <div class="stage"><canvas id="cv"></canvas><div class="ov" id="ov"><h3 id="ovT"></h3><p id="ovS"></p><button class="btn main" id="again" style="display:none">Играть снова</button></div></div>
+ <aside class="card side2">
+  <div class="lab">Очки</div><div class="score" id="score">0</div>
+  <div class="lab">Рекорд</div><div class="bst" id="best">0</div>
+  <div class="lab" id="extra"></div><canvas id="nx" width="120" height="100"></canvas>
+  <ul class="meta" id="ctrl"></ul>
+  <div class="row"><button class="btn sm" id="pauseBtn">Пауза</button><button class="btn sm" id="restart">Заново</button></div>
+  <p class="lab" id="guest">Чтобы рекорд попал в рейтинг, <a href="profile.html">войдите в профиль</a>.</p>
+  <a class="btn main sm" href="games.html" style="align-self:flex-start">К играм</a>
+ </aside>
+</div></div></div></main>
+<footer><div class="wrap"><span>БЛОК — мини-игры в браузере</span><a href="games.html" style="color:var(--accent);text-decoration:none">Выбрать игру</a></div></footer>
+<script src="main.js"></script><script src="games.js"></script></body></html>

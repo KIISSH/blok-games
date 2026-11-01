@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>БЛОК — профиль</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><canvas id="bgfx" data-fx="page"></canvas>
+<header><div class="wrap"><a class="logo" href="index.html"><img src="logo.svg" alt="" width="34" height="34">БЛОК</a><nav class="nav"><a href="index.html" >Главная</a><a href="games.html" >Игры</a><a href="profile.html" class="on">Профиль</a></nav></div></header>
+<main><div class="banner"><div class="scene"><canvas data-fx="banner"></canvas></div><div class="wrap"><h1>Профиль</h1><p>Ваши рекорды и место в рейтинге каждой игры.</p></div></div>
+<div class="page"><div class="wrap">
+ <div class="auth" id="authView">
+  <div class="side"><div class="scene"><canvas data-fx="side"></canvas></div><div class="tx"><h2>Ваш профиль</h2><ul><li>Сохраняет рекорды во всех играх</li><li>Показывает ваше место в рейтинге</li><li>Не нужна почта, только имя и пароль</li></ul></div></div>
+  <form id="authForm" autocomplete="off">
+   <div class="mode"><button type="button" data-m="reg" class="on">Регистрация</button><button type="button" data-m="login">Вход</button></div>
+   <label>Имя<input id="fName" maxlength="16" required></label>
+   <label>Пароль<input id="fPass" type="password" required></label>
+   <label id="confWrap">Подтвердите пароль<input id="fConf" type="password"></label>
+   <div class="err" id="err"></div>
+   <button class="btn main" id="submit" type="submit">Создать профиль</button>
+  </form>
+ </div>
+ <div class="profile hide" id="profView">
+  <div class="card me"><div class="ava" id="pAva">И</div><h3 id="pName"></h3><small id="pSince"></small>
+   <div class="sum"><div><b id="pGames">7</b>игр</div><div><b id="pPts">0</b>очков всего</div></div>
+   <ul class="places" id="pPlaces"></ul><button class="btn sm out" id="logout">Выйти</button></div>
+  <div><div class="gtabs" id="gtabs"></div>
+   <div class="card"><table><thead><tr><th>Место</th><th>Игрок</th><th>Очки</th></tr></thead><tbody id="rows"></tbody></table></div></div>
+ </div>
+</div></div></main>
+<footer><div class="wrap"><span>БЛОК — мини-игры в браузере</span><a href="games.html" style="color:var(--accent);text-decoration:none">Выбрать игру</a></div></footer>
+<script src="main.js"></script></body></html>

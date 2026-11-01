@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>БЛОК — мини-игры</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"></head><body><canvas id="bgfx" data-fx="page"></canvas>
+<header><div class="wrap"><a class="logo" href="index.html"><img src="logo.svg" alt="" width="34" height="34">БЛОК</a><nav class="nav"><a href="index.html" class="on">Главная</a><a href="games.html">Игры</a><a href="profile.html">Профиль</a></nav></div></header>
+<main>
+<div class="hero"><div class="scene"><canvas data-fx="hero"></canvas></div><div id="rain"></div><div class="wrap">
+ <div><h1>Мини-игры.<br><span>Свой рейтинг.</span></h1>
+ <p>Семь игр в одном месте: Змейка, Тетрис, Block Blast, 2048, Башня, Мост и Цепочка. Играйте, копите очки и поднимайтесь в таблице лидеров.</p>
+ <a class="btn main" href="games.html">Начать играть</a></div>
+ <div class="right"><div class="emblem"><img class="mark" src="mark.svg" alt=""><div class="word">БЛОК</div><small>мини-игры</small></div>
+ <div class="status"><span class="tag">Онлайн</span><div class="big">7<small>игр в каталоге</small></div>
+ <div class="bar"><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i class="f"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+ <div style="color:var(--muted);font-size:14px">Все игры уже доступны</div></div></div>
+</div></div>
+<div class="manifest"><i data-fl="2" data-s="30" style="right:7%;top:14%"></i><i data-fl="1" data-s="22" data-d="-4" style="right:24%;top:58%"></i><div class="wrap"><p class="reveal">Здесь не нужно ничего устанавливать. Выбираете игру, набираете очки и сравниваете результат с другими игроками. Лучшие места попадают в рейтинг профиля.</p></div></div>
+<section><i data-fl="4" data-s="26" data-d="-2" style="right:5%;top:24%"></i><div class="wrap"><h2>Как начать</h2><div class="steps">
+ <div><div class="n">1</div><h3>Выберите игру</h3><p>Откройте каталог и выберите игру по вкусу.</p><div class="act"><a class="btn sm" href="games.html">К каталогу</a></div></div>
+ <div><div class="n">2</div><h3>Играйте</h3><p>Игра запускается прямо в браузере, без скачивания.</p><div class="keys"><kbd>←</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>→</kbd><span>или WASD</span></div></div>
+ <div><div class="n">3</div><h3>Следите за рейтингом</h3><p>Создайте профиль, и лучший результат сохранится в нём вместе с вашим местом.</p><div class="act"><a class="btn sm" href="profile.html">Создать профиль</a></div></div>
+</div></div></section>
+<section class="hs" id="gamesRow"><div class="pin"><div class="wrap"><div class="head"><h2>Игры</h2><a href="games.html">Все игры</a></div>
+ <div class="units">
+  <a class="unit" href="play.html?g=snake" style="--c:rgba(76,208,125,.5);--ac:#4cd07d"><div class="cells" style="--n:7" id="hSnake"></div><span class="tag">Играть</span><h3>Змейка</h3><div class="sub">Классика на реакцию</div><p>Собирайте еду, растите и не врезайтесь в стены и в собственный хвост.</p><div class="m">Рекорд в рейтинге: <span data-top="snake"></span></div></a>
+  <a class="unit" href="play.html?g=tetris" style="--c:rgba(255,138,31,.5);--ac:#ff8a1f"><div class="cells" style="--n:6" id="hTetris"></div><span class="tag">Играть</span><h3>Тетрис</h3><div class="sub">Линии, скорость, комбо</div><p>Складывайте фигуры в линии. Чем выше скорость, тем больше очков.</p><div class="m">Рекорд в рейтинге: <span data-top="tetris"></span></div></a>
+  <a class="unit" href="play.html?g=blast" style="--c:rgba(61,111,224,.55);--ac:#6d96f2"><div class="cells" style="--n:6" id="hBlast"></div><span class="tag">Играть</span><h3>Block Blast</h3><div class="sub">Головоломка на поле 8×8</div><p>Ставьте блоки на поле и очищайте строки и столбцы.</p><div class="m">Рекорд в рейтинге: <span data-top="blast"></span></div></a>
+ <a class="unit" href="play.html?g=g2048" style="--c:rgba(179,107,255,.5);--ac:#b36bff"><div class="cells" style="--n:4" id="hG2048"></div><span class="tag">Играть</span><h3>2048</h3><div class="sub">Числа и стратегия</div><p>Сдвигайте плитки и объединяйте одинаковые числа до 2048.</p><div class="m">Рекорд в рейтинге: <span data-top="g2048"></span></div></a>
+ 
+ <a class="unit" href="play.html?g=tower" style="--c:rgba(25,181,165,.5);--ac:#19b5a5"><div class="cells" style="--n:6" id="hTower"></div><span class="tag">Играть</span><h3>Башня</h3><div class="sub">Один клик, точный расчёт</div><p>Ставьте блоки точно друг на друга и стройте башню как можно выше.</p><div class="m">Рекорд в рейтинге: <span data-top="tower"></span></div></a>
+ <a class="unit" href="play.html?g=bridge" style="--c:rgba(255,193,90,.5);--ac:#ffc15a"><div class="cells" style="--n:7" id="hBridge"></div><span class="tag">Играть</span><h3>Мост</h3><div class="sub">Зажми, отпусти, перейди</div><p>Зажмите, чтобы мост вырос, и отпустите — он должен дотянуться до следующей площадки.</p><div class="m">Рекорд в рейтинге: <span data-top="bridge"></span></div></a>
+ <a class="unit" href="play.html?g=chain" style="--c:rgba(255,92,138,.5);--ac:#ff5c8a"><div class="cells" style="--n:6" id="hChain"></div><span class="tag">Играть</span><h3>Цепочка</h3><div class="sub">Один взрыв — вся цепь</div><p>Запустите один взрыв так, чтобы он задел как можно больше шариков.</p><div class="m">Рекорд в рейтинге: <span data-top="chain"></span></div></a>
+ </div><div class="track"><i></i></div></div></div></section>
+<div class="final"><div class="scene"><canvas data-fx="final"></canvas></div><div class="wrap"><div><h2>Займите место в рейтинге</h2><p>Выберите игру, поставьте рекорд и поднимитесь в таблице лидеров.</p><a class="btn main" href="games.html">Начать играть</a></div><div class="emblem"><img class="mark" src="mark.svg" alt=""><div class="word">БЛОК</div><small>мини-игры</small></div></div></div>
+</main>
+<footer><div class="wrap"><span>БЛОК — мини-игры в браузере</span><a href="games.html" style="color:var(--accent);text-decoration:none">Выбрать игру</a></div></footer>
+<script src="main.js"></script></body></html>
